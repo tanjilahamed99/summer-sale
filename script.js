@@ -13,6 +13,10 @@ function countItems(productId, priceID) {
     const totalProductsPrice = total + price;
     totalElement.innerText = totalProductsPrice;
 
+    // total amount taka 
+
+    const totalAmountElement = document.getElementById('total-amount').innerText = totalProductsPrice;
+
     //discount
     const discountBtn = document.getElementById('discount-btn');
     const PurchaseBtn = document.getElementById('Purchase-btn');
