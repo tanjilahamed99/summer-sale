@@ -30,6 +30,7 @@ function discount(totalPrice) {
     document.getElementById('discount-btn').addEventListener('click',function(){
         const discountInputElement  = document.getElementById('discount-input');
         const discountInput = discountInputElement.value;
+        discountInputElement.value = '';
         const promoCodeElement = document.getElementById('promo-code');
         const promoCode = promoCodeElement.innerText;
         if(discountInput === promoCode ){

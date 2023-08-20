@@ -22,10 +22,10 @@ function countItems(productId, priceID) {
     const PurchaseBtn = document.getElementById('Purchase-btn');
     if(totalProductsPrice > 0 ){
         PurchaseBtn.removeAttribute('disabled');
-    }
-    else if (totalProductsPrice > 200) {
-        discountBtn.removeAttribute('disabled');
-        discount(totalProductsPrice);
+        if (totalProductsPrice > 200) {
+            discountBtn.removeAttribute('disabled');
+            discount(totalProductsPrice);
+        }
     }
 };
 

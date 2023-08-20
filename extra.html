@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- work sons font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- tailwind and daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+    <section class="flex flex-col md:flex-row bg-[#1111110D] pt-10 px-5 lg:px-24 gap-10">
+        <!-- items -->
+        <div class="flex-1">
+            <!-- Kitchenware items -->
+            <h1 class="font-semibold text-4xl mb-10">Kitchenware</h1>
+            <div id="kitchen-item-1" class="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mb-10">
+                <!-- kitchen item -1 -->
+                <div onclick="countItems('kitchen-item-1-name','kitchen-item-1-price')" class="card h-[300px] w-[250px] shadow-xl text-center px-3 py-3 bg-white">
+                    <div class="bg-[#1111110D] rounded-md ">
+                        <img class="mx-auto h-32 w-28" src="images/prod1.png"
+                        alt="Shoes" />
+                    </div>
+                    <div class="card-body">
+                        <!-- rating -->
+                        <div>
+                            <div class="rating mt-0">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                            </div>
+                        </div>
+                        <h2 id="kitchen-item-1-name" class="text-xl font-semibold">K. Accessories</h2>
+                        <p class="text-[#1111117F] text-xl"><span id="kitchen-item-1-price">39.00</span> TK</p>
+                    </div>
+                </div>
+                <!-- kitchen item -2 -->
+                <div onclick="countItems('kitchen-item-1-name','kitchen-item-1-price')" class="card h-[300px] w-[250px] shadow-xl text-center px-3 py-3 bg-white">
+                    <div class="bg-[#1111110D] rounded-md">
+                        <img class="mx-auto h-32 w-28" src="images/prod2.png"
+                        alt="Shoes" />
+                    </div>
+                    <div class="card-body">
+                        <!-- rating -->
+                        <div>
+                            <div class="rating mt-0">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                            </div>
+                        </div>
+                        <h2 id="kitchen-item-1-name" class="text-xl font-semibold">K. Accessories</h2>
+                        <p class="text-[#1111117F] text-xl"><span id="kitchen-item-1-price">39.00</span> TK</p>
+                    </div>
+                </div>
+                <!-- kitchen item -3 -->
+                <div onclick="countItems('kitchen-item-1-name','kitchen-item-1-price')" class="card h-[300px] w-[250px] shadow-xl text-center px-3 py-3 bg-white">
+                    <div class="bg-[#1111110D] rounded-md">
+                        <img class="mx-auto h-32 w-28" src="images/prod3.png"
+                        alt="Shoes" />
+                    </div>
+                    <div class="card-body">
+                        <!-- rating -->
+                        <div>
+                            <div class="rating mt-0">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                            </div>
+                        </div>
+                        <h2 id="kitchen-item-1-name" class="text-xl font-semibold">K. Accessories</h2>
+                        <p class="text-[#1111117F] text-xl"><span id="kitchen-item-1-price">39.00</span> TK</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Sportswear items -->
+            <h1 class="font-semibold text-4xl mb-10">Sportswear</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
+                <!-- Sportswear item -1 -->
+                <div onclick="countItems('Sportswear-item-1-name','Sportswear-item-1-price')" class=" card  shadow-xl text-center px-10 py-5 bg-white">
+                    <img class="bg-[#1111110D] p-10 w-[300px] h-[200px] rounded-md  mx-auto" src="images/prod4.png"
+                        alt="Shoes" />
+                    <div class="card-body">
+                        <!-- rating -->
+                        <div>
+                            <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                            </div>
+                        </div>
+                        <h2 id="Sportswear-item-1-name" class="text-xl font-semibold">Sports Back Cap</h2>
+                        <p class="text-[#1111117F] text-xl"><span id="Sportswear-item-1-price">49.00</span> TK</p>
+                    </div>
+                </div>
+                <!-- Sportswear item -2 -->
+                <div onclick="countItems('Sportswear-item-2-name','Sportswear-item-2-price')" class="card  shadow-xl text-center px-10 py-5 bg-white">
+                    <img class="bg-[#1111110D] w-[300px] h-[200px] p-10 rounded-md  mx-auto" src="images/prod5.png"
+                        alt="Shoes" />
+                    <div class="card-body">
+                        <!-- rating -->
+                        <div>
+                            <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                            </div>
+                        </div>
+                        <h2 id="Sportswear-item-2-name" class="text-xl font-semibold">Full Jersey Set</h2>
+                        <p class="text-[#1111117F] text-xl"><span id="Sportswear-item-2-price">69.00</span>TK</p>
+                    </div>
+                </div>
+                <!-- Sportswear item -3 -->
+                <div onclick="countItems('Sportswear-item-3-name','Sportswear-item-3-price')" class="card  shadow-xl text-center px-10 py-5 bg-white">
+                    <img class="bg-[#1111110D] w-[300px] h-[200px] p-10 rounded-md  mx-auto " src="images/prod6.png"
+                        alt="Shoes" />
+                    <div class="card-body">
+                        <!-- rating -->
+                        <div>
+                            <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                            </div>
+                        </div>
+                        <h2  id="Sportswear-item-3-name" class="text-xl font-semibold">Sports cates</h2>
+                        <p class="text-[#1111117F] text-xl"> <span id="Sportswear-item-3-price">159.00</span>TK</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Furniture items -->
+            <h1 class="font-semibold text-4xl mb-10">Furniture</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
+                <!-- kitchen item -1 -->
+                <div onclick="countItems('Furniture-item-1-name','Furniture-item-1-price')" class="card  shadow-xl text-center px-10 py-5 bg-white">
+                    <img class="bg-[#1111110D] w-[300px] h-[200px] p-10 rounded-md  mx-auto" src="images/prod7.png"
+                        alt="Shoes" />
+                    <div class="card-body">
+                        <!-- rating -->
+                        <div>
+                            <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                            </div>
+                        </div>
+                        <h2 id="Furniture-item-1-name" class="text-xl font-semibold">Single Relax Chair</h2>
+                        <p class="text-[#1111117F] text-xl"><span id="Furniture-item-1-price">185.00</span>Tk </p>
+                    </div>
+                </div>
+                <!-- kitchen item -2 -->
+                <div onclick="countItems('Furniture-item-2-name','Furniture-item-2-price')" class="card  shadow-xl text-center px-10 py-5 bg-white">
+                    <img class="bg-[#1111110D] w-[300px] h-[200px] p-10 rounded-md  mx-auto" src="images/prod8.png"
+                        alt="Shoes" />
+                    <div class="card-body">
+                        <!-- rating -->
+                        <div>
+                            <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                            </div>
+                        </div>
+                        <h2 id="Furniture-item-2-name" class="text-xl font-semibold">Children play</h2>
+                        <p class="text-[#1111117F] text-xl"><span id="Furniture-item-2-price">299.00</span>  TK</p>
+                    </div>
+                </div>
+                <!-- kitchen item -3 -->
+                <div onclick="countItems('Furniture-item-3-name','Furniture-item-3-price')" class="card  shadow-xl text-center px-10 py-5 bg-white">
+                    <img class="bg-[#1111110D] w-[300px] h-[200px] p-10 rounded-md  mx-auto " src="images/prod9.png"
+                        alt="Shoes" />
+                    <div class="card-body">
+                        <!-- rating -->
+                        <div>
+                            <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                            </div>
+                        </div>
+                        <h2 id="Furniture-item-3-name" class="text-xl font-semibold">Flexible Sofa</h2>
+                        <p class="text-[#1111117F] text-xl"><span id="Furniture-item-3-price">339.00</span> TK</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- history -->
+        <div class="">
+            <div class="bg-white py-5 px-5 mt-[82px] mb-4">
+                <h2 class="font-medium text-2xl">Have coupon?</h2>
+                <div class="space-y-3">
+                    <input id="discount-input" class="border p-3 rounded-lg" placeholder="Coupon code" type="text">
+                    <button  class="btn text-center rounded-r-md  text-white bg-[#E527B2]" id="discount-btn" disabled>Apply</button>
+                </div>
+            </div>
+
+            <div class="bg-white py-5 px-5">
+                <!-- products count -->
+                <div id="product-count">
+
+                </div>
+                <hr class="my-4 text-[#1111117F] w-[90%] mx-auto">
+                <!-- money count -->
+                <div>
+                    <h2 class="text-2xl font-medium">Total price: <span
+                            class="text-[#1111117F]"><span id="total">0</span>Tk</span></h2>
+                    <h2 class="text-2xl font-medium"> Discount : <span
+                            class="text-[#1111117F]"><span id="discount-money">0</span>Tk</span></h2>
+                    <h2 class="text-2xl font-medium"> Total: <span class="text-[#1111117F]"><span  id="total-amount">0</span>Tk</span>
+                    </h2>
+                </div>
+                <hr class="my-4 text-[#1111117F] w-[90%] mx-auto">
+                <!--Purchase -->
+                <div>
+                    <!-- Open the modal using ID.showModal() method -->
+                    <button id="Purchase-btn" disabled class="btn bg-[#E527B2] text-white w-full mt-5" onclick="my_modal_2.showModal()">Make
+                        Purchase</button>
+                    <dialog id="my_modal_2" class="modal">
+                        <form method="dialog" class="modal-box  mx-auto justify-center grid text-center py-10">
+                            <img class="mx-auto" src="images/congo.png" alt="">
+                            <h3 class="font-bold text-5xl mb-3">Congratulations</h3>
+                            <p class="mb-10  font-normal text-xl">Your Purchase the product</p>
+                            <button class="btn bg-[#E527B2] text-white">Go Home</button>
+                        </form>
+                        <form method="dialog" class="modal-backdrop">
+                            <button>close</button>
+                        </form>
+                    </dialog>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

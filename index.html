@@ -40,20 +40,22 @@
     </header>
     <!-- main -->
     <main>
-        <section class="flex bg-[#1111110D] pt-10 lg:px-28 gap-6">
+        <section class="flex flex-col md:flex-row bg-[#1111110D] pt-10 px-5 lg:px-24 gap-6">
             <!-- items -->
             <div class="flex-1">
                 <!-- Kitchenware items -->
                 <h1 class="font-semibold text-4xl mb-10">Kitchenware</h1>
                 <div id="kitchen-item-1" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
                     <!-- kitchen item -1 -->
-                    <div onclick="countItems('kitchen-item-1-name','kitchen-item-1-price')" class="card shadow-xl text-center px-10 py-5 bg-white">
-                        <img class="bg-[#1111110D] w-[300px] h-[200px] p-10 rounded-md  mx-auto" src="images/prod1.png"
+                    <div onclick="countItems('kitchen-item-1-name','kitchen-item-1-price')" class="card h-[300px] w-[250px] shadow-xl text-center px-3 py-3 bg-white">
+                        <div class="bg-[#1111110D] rounded-md">
+                            <img class="mx-auto h-32 w-28" src="images/prod1.png"
                             alt="Shoes" />
+                        </div>
                         <div class="card-body">
                             <!-- rating -->
                             <div>
-                                <div class="rating">
+                                <div class="rating mt-0">
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked />
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
@@ -66,9 +68,11 @@
                         </div>
                     </div>
                     <!-- kitchen item -2 -->
-                    <div onclick="countItems('kitchen-item-2-name','kitchen-item-2-price')" class="card  shadow-xl text-center px-10 py-5 bg-white">
-                        <img class="bg-[#1111110D] w-[300px] h-[200px] p-10 rounded-md  mx-auto" src="images/prod2.png"
+                    <div onclick="countItems('kitchen-item-2-name','kitchen-item-2-price')" class="card  h-[300px] w-[250px] shadow-xl text-center px-3 py-3 bg-white">
+                        <div class="bg-[#1111110D] rounded-md">
+                            <img class="mx-auto h-32 w-28" src="images/prod2.png"
                             alt="Shoes" />
+                        </div>
                         <div class="card-body">
                             <!-- rating -->
                             <div>
@@ -85,9 +89,11 @@
                         </div>
                     </div>
                     <!-- kitchen item -3 -->
-                    <div onclick="countItems('kitchen-item-3-name','kitchen-item-3-price')" class="card  shadow-xl text-center px-10 py-5 bg-white">
-                        <img class="bg-[#1111110D] w-[300px] h-[200px] p-10 rounded-md  mx-auto " src="images/prod3.png"
+                    <div onclick="countItems('kitchen-item-3-name','kitchen-item-3-price')" class="card h-[300px] w-[250px]  shadow-xl text-center px-3 py-3 bg-white">
+                        <div class="bg-[#1111110D] rounded-md">
+                            <img class="mx-auto h-32 w-28" src="images/prod3.png"
                             alt="Shoes" />
+                        </div>
                         <div class="card-body">
                             <!-- rating -->
                             <div>
