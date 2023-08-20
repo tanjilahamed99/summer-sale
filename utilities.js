@@ -40,7 +40,7 @@ function discount(totalPrice) {
                discount.innerText = totalAmount.toFixed(2);
             totalAmountElement.innerText = totalWithDiscount;
         }else{
-            console.log('your promo code is invalid')
+           alert('your coupon code is invalid')
         }
     });
 };
