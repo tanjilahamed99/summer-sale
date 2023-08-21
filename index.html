@@ -40,12 +40,12 @@
     </header>
     <!-- main -->
     <main>
-        <section class="flex flex-col md:flex-row bg-[#1111110D] pt-10 px-5 lg:px-24 gap-6">
+        <section class="flex flex-col  md:flex-row bg-[#1111110D] pt-10 px-5 lg:px-14  gap-2">
             <!-- items -->
-            <div class="flex-1">
+            <div class="flex-1 mx-auto">
                 <!-- Kitchenware items -->
                 <h1 class="font-semibold text-4xl mb-10">Kitchenware</h1>
-                <div id="kitchen-item-1" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
+                <div id="kitchen-item-1" class="grid grid-cols-1 lg:grid-cols-2  xl:grid-cols-3 gap-5 mb-10">
                     <!-- kitchen item -1 -->
                     <div onclick="countItems('kitchen-item-1-name','kitchen-item-1-price')" class="card h-[300px] w-[250px] shadow-xl text-center px-3 py-3 bg-white">
                         <div class="bg-[#1111110D] rounded-md">
@@ -112,7 +112,7 @@
                 </div>
                 <!-- Sportswear items -->
                 <h1 class="font-semibold text-4xl mb-10">Sportswear</h1>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
+                <div class="grid grid-cols-1  lg:grid-cols-2  xl:grid-cols-3 gap-5 mb-10">
                     <!-- Sportswear item -1 -->
                     <div onclick="countItems('Sportswear-item-1-name','Sportswear-item-1-price')" class=" card h-[300px] w-[250px] shadow-xl text-center px-3 py-3 bg-white">
                         <div class="bg-[#1111110D] rounded-md">
@@ -179,7 +179,7 @@
                 </div>
                 <!-- Furniture items -->
                 <h1 class="font-semibold text-4xl mb-10">Furniture</h1>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
+                <div class="grid grid-cols-1  lg:grid-cols-2  xl:grid-cols-3 gap-5 mb-10">
                     <!-- kitchen item -1 -->
                     <div onclick="countItems('Furniture-item-1-name','Furniture-item-1-price')" class="card  shadow-xl text-center h-[300px] w-[250px] px-3 py-3 bg-white">
                         <div class="bg-[#1111110D] rounded-md">
@@ -247,15 +247,15 @@
             </div>
             <!-- history -->
             <div class="">
-                <div class="bg-white py-5 px-5 mt-[82px] mb-4">
-                    <h2 class="font-medium text-2xl">Have coupon?</h2>
+                <div class="bg-white py-5 px-6 mt-[82px] mb-4 w-[85%] mx-auto">
+                    <h2 class="font-medium text-2xl mb-3">Have coupon?</h2>
                     <div class="space-y-3">
-                        <input id="discount-input" class="border p-3 rounded-lg" placeholder="Coupon code" type="text">
+                        <input id="discount-input" class="border p-3 rounded-lg w-[90%] md:w-[65%]" placeholder="Coupon code" type="text">
                         <button  class="btn text-center rounded-r-md  text-white bg-[#E527B2]" id="discount-btn" disabled>Apply</button>
                     </div>
                 </div>
 
-                <div class="bg-white py-5 px-5">
+                <div class="bg-white py-5 px-5 w-[85%] mx-auto">
                     <!-- products count -->
                     <div id="product-count">
 
