@@ -36,4 +36,5 @@ document.getElementById('Purchase-btn').addEventListener('click',function(){
     const totalAmountElement = document.getElementById('total-amount').innerText = 0;
     //
     const div = document.getElementById('product-count').innerHTML = '';
+
 })

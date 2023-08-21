@@ -15,17 +15,6 @@ function productPrice(priceID) {
     return price;
 };
 
-//Inner text to  number
-
-/* function innerTextToNumber(Id,totalProductsPrice){
-    const totalElement = document.getElementById(Id);
-    const totalText = totalElement.innerText;
-    const total = parseFloat(totalText);
-    totalElement.innerText = totalProductsPrice;
-    return total;
-} */
-
-
 function discount(totalPrice) {
     document.getElementById('discount-btn').addEventListener('click',function(){
         const discountInputElement  = document.getElementById('discount-input');
